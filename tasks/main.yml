@@ -1,0 +1,5 @@
+---
+- name: Display file contents
+  command: "cat {{show_file}} chdir={{show_directory}}"
+  register: command_output
+  notify: Print to console
